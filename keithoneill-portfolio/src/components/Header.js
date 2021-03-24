@@ -2,7 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Drawer, List, ListItem, ListItemIcon, ListItemText, Divider, AppBar, Toolbar, Link, ClickAwayListener, IconButton } from '@material-ui/core';
-import { Menu as MenuIcon, PersonOutline as PersonOutlineIcon, LockOpenOutlined as LockOpenOutlinedIcon, InfoOutlined as InfoOutlinedIcon, ChevronRight as ChevronRightIcon } from '@material-ui/icons';
+import { Menu as MenuIcon, Person as PersonOutlineIcon, Receipt, ContactMail, ChevronRight as ChevronRightIcon } from '@material-ui/icons';
+import Profile from '../images/KeithONeill_ProfilePic.png';
 
 const drawerWidth = 240;
 
@@ -16,7 +17,11 @@ const useStyles = makeStyles((theme) => ({
     width: '100vw',
   },
   text: {
-    color: '#C7F9CC',
+    color: '#ddd',
+  },
+  picture: {
+    width: '60%',
+    alignSelf: 'center',
   },
   menuButton: {
     marginLeft: theme.spacing(5),
@@ -110,32 +115,32 @@ export default function Header() {
               <ChevronRightIcon />
             </IconButton>
           </div>
-          <Divider />
+          <img src={Profile} alt="Keith O'Neill" className={classes.picture} />
           <List>
-            <Link href="/login">
+            <Link href="/biography" style={{ textDecoration: 'none' }} >
               <ListItem button onClick={handleDrawerClose}>
                 <ListItemIcon>
                   <PersonOutlineIcon />
                 </ListItemIcon>
-                <ListItemText primary="Login" />
+                <ListItemText primary="Keith O'Neill" />
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/register">
+            <Link href="/resume" style={{ textDecoration: 'none' }} >
               <ListItem button onClick={handleDrawerClose}>
                 <ListItemIcon>
-                  <LockOpenOutlinedIcon />
+                  <Receipt />
                 </ListItemIcon>
-                <ListItemText primary="Register" />
+                <ListItemText primary="Resume" />
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/about">
+            <Link href="/contact" style={{ textDecoration: 'none' }} >
               <ListItem button onClick={handleDrawerClose}>
                 <ListItemIcon>
-                  <InfoOutlinedIcon />
+                  <ContactMail />
                 </ListItemIcon>
-                <ListItemText primary="About WhatchuWatchin" />
+                <ListItemText primary="Contact" />
               </ListItem>
             </Link>
             <Divider />
