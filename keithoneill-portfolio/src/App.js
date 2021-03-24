@@ -1,10 +1,19 @@
 import React from 'react';
+import { CssBaseline, Container } from '@material-ui/core';
+import Header from './components/Header'
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <CssBaseline />
+      <Header />
+      <main>
+        <div>
+          <Container maxWidth="sm">
+          </Container>
+        </div>
+      </main>
+    </>
   );
 }
 
