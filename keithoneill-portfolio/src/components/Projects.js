@@ -182,8 +182,8 @@ function Projects(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Typography variant="h4" marked="center" align="center" component="h2">
-        Projects
+      <Typography variant="h3" marked="center" align="center" component="h2">
+        Featured Projects
       </Typography>
       <div className={classes.images}>
         {images.map((image) => (
