@@ -1,27 +1,27 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { CssBaseline, Container } from '@material-ui/core';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Projects from './components/Projects'
 import Footer from './components/Footer';
-// import ProjectDetails from './components/ProjectDetails';
+import MPCert from './views/MPCert';
+import Landing from './views/Landing';
+
 
 const App = () => {
   return (
-    <>
-      <CssBaseline />
-      <Header />
-      <Hero />
-      <main>
-        <div>
-          <Container>
-            <Projects />
-            {/* <ProjectDetails /> */}
-          </Container>
-        </div>
-      </main>
-      <Footer />
-    </>
+    <Router>
+        <CssBaseline />
+        <Header />
+          <main>
+            <Switch>
+              <Route path="/" exact component={Landing} />
+              <Container disableGutters>
+                <Route path="/mpcert" exact component={MPCert} />
+              </Container>
+            </Switch>
+          </main>
+        <Footer/>
+      </Router>
   );
 }
 
