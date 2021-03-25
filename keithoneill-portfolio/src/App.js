@@ -4,6 +4,7 @@ import { CssBaseline, Container } from '@material-ui/core';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MPCert from './views/MPCert';
+import MPAM from './views/MPAM';
 import Landing from './views/Landing';
 
 
@@ -17,6 +18,7 @@ const App = () => {
               <Route path="/" exact component={Landing} />
               <Container disableGutters>
                 <Route path="/mpcert" exact component={MPCert} />
+                <Route path="/mpam" exact component={MPAM} />
               </Container>
             </Switch>
           </main>
