@@ -26,8 +26,11 @@ const useStyles = makeStyles((theme) => ({
   },
   links: {
     color: '#264653',
+    paddingLeft: 8,
     '&:hover': {
-      backgroundColor: 'rgba(51, 170, 51, .1) ',
+      boxShadow: '2px 2px 7px #21201e',
+      marginTop: 5,
+      marginLeft: 5,
     },
   },
 }));
