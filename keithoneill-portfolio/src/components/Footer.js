@@ -3,7 +3,6 @@ import { CssBaseline, Typography, Container, Link, List, ListItem, ListItemIcon,
 import { makeStyles } from '@material-ui/core/styles';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import EmailIcon from '@material-ui/icons/Email';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
@@ -39,7 +38,7 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id="footer">
       <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
         <Typography variant="h2" component="h1" gutterBottom>
@@ -60,14 +59,6 @@ export default function Footer() {
                   <ReceiptIcon />
                 </ListItemIcon>
                 <ListItemText primary={<Typography variant='h5' className={classes.links}>Resume</Typography>}/>
-              </ListItem>
-            </Link>
-            <Link href="/contact" style={{ textDecoration: 'none' }} >
-              <ListItem>
-                <ListItemIcon>
-                  <ContactMailIcon />
-                </ListItemIcon>
-                <ListItemText primary={<Typography variant='h5' className={classes.links}>Contact</Typography>}/>
               </ListItem>
             </Link>
             <Link href="https://www.linkedin.com/in/keith-o-neill-280179133/" style={{ textDecoration: 'none' }} >
