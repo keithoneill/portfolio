@@ -12,6 +12,7 @@ import WW from './views/WW';
 import Orientation from './views/Orientation';
 import Prepclass from './views/Prepclass';
 import Physics from './views/Physics';
+import Resume from './views/Resume';
 import Landing from './views/Landing';
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
                 <Route path="/orientation" exact component={Orientation} />
                 <Route path="/prepclass" exact component={Prepclass} />
                 <Route path="/physicsofsound" exact component={Physics} />
+                <Route path="/resume" exact component={Resume} />
               </Container>
             </Switch>
           </main>
