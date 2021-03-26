@@ -146,7 +146,7 @@ export default function Header() {
               </ListItem>
             </Link>
             <Divider />
-            <Link href="/contact" style={{ textDecoration: 'none' }} >
+            <Link href="/#footer" style={{ textDecoration: 'none' }} >
               <ListItem button onClick={handleDrawerClose}>
                 <ListItemIcon>
                   <ContactMail />
