@@ -15,20 +15,21 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'space-evenly',
   },
   gif: {
-    marginTop: 20,
+    // marginTop: 20,
     boxShadow: '6px 5px 5px #21201e',
     width: '92%'
   },
   gif2: {
-    marginTop: 20,
+    // marginTop: 20,
     boxShadow: '6px 5px 5px #21201e',
     width: '40%',
     height: '50vh',
   },
   image: {
-    marginTop: 20,
+    // marginTop: 20,
     marginLeft: 10,
     marginRight: 10,
     width: '45%',
