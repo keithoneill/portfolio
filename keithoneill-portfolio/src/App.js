@@ -11,6 +11,7 @@ import Quiz from './views/Quiz';
 import WW from './views/WW';
 import Orientation from './views/Orientation';
 import Prepclass from './views/Prepclass';
+import Physics from './views/Physics';
 import Landing from './views/Landing';
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
                 <Route path="/whatchuwatchin" exact component={WW} />
                 <Route path="/orientation" exact component={Orientation} />
                 <Route path="/prepclass" exact component={Prepclass} />
+                <Route path="/physicsofsound" exact component={Physics} />
               </Container>
             </Switch>
           </main>
