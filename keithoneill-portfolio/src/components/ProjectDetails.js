@@ -1,16 +1,18 @@
 import { React, useState } from 'react';
 import { CssBaseline, Paper, Grid, Modal, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Background from '../images/gridpapersmall_vert.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     height: '100vh',
   },
   sidebar: {
-    backgroundImage: 'url(https://images.unsplash.com/photo-1598940603846-a1edd0ef2574?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhY2tncm91bmQlMjBncmVlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)',
+    backgroundImage: `url(${Background})`,
     backgroundRepeat: 'no-repeat',
-    backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    // backgroundColor:
+    //   theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    // backgroundColor: '#E76F51',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
