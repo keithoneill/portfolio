@@ -21,6 +21,12 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '6px 5px 5px #21201e',
     width: '92%'
   },
+  gif2: {
+    marginTop: 20,
+    boxShadow: '6px 5px 5px #21201e',
+    width: '40%',
+    height: '50vh',
+  },
   image: {
     marginTop: 20,
     marginLeft: 10,
@@ -95,12 +101,12 @@ export default function ProjectDetails(props) {
     </div>
   );
 
-
   return (
+    
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.sidebar}>
-        <img src={props.gif} alt="Loading..." className={classes.gif} />
+        {props.gif ? <img src={props.gif} alt="Loading..." className={classes.gif} /> : <img src={props.gif2} alt="Loading..." className={classes.gif2} />}
         <Hidden smDown>
           <div className={classes.imageContainer}>
             <img src={props.image01} alt="Loading..." className={classes.image} onClick={handleOpen01}/>
