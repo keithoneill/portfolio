@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { CssBaseline, Paper, Grid, Modal, Typography } from '@material-ui/core';
+import { CssBaseline, Paper, Grid, Modal, Typography, Hidden } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Background from '../images/gridpapersmall_vert.jpg';
 
@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme) => ({
   sidebar: {
     backgroundImage: `url(${Background})`,
     backgroundRepeat: 'no-repeat',
-    // backgroundColor:
-    //   theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-    // backgroundColor: '#E76F51',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     display: 'flex',
@@ -22,10 +19,12 @@ const useStyles = makeStyles((theme) => ({
   gif: {
     marginTop: 20,
     boxShadow: '6px 5px 5px #21201e',
-    width: '90%'
+    width: '92%'
   },
   image: {
     marginTop: 20,
+    marginLeft: 10,
+    marginRight: 10,
     width: '45%',
     cursor: 'pointer',
     boxShadow: '6px 5px 5px #21201e',
@@ -102,26 +101,28 @@ export default function ProjectDetails(props) {
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.sidebar}>
         <img src={props.gif} alt="Loading..." className={classes.gif} />
-        <div className={classes.imageContainer}>
-          <img src={props.image01} alt="Loading..." className={classes.image} onClick={handleOpen01}/>
-          <img src={props.image02} alt="Loading..." className={classes.image} onClick={handleOpen02}/>
-          <Modal
-            open={open01}
-            onClose={handleClose01}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-            >
-            {body01}
-          </Modal>
-          <Modal
-            open={open02}
-            onClose={handleClose02}
-            aria-labelledby="simple-modal-title"
-            aria-describedby="simple-modal-description"
-            >
-            {body02}
-          </Modal>
-        </div>
+        <Hidden smDown>
+          <div className={classes.imageContainer}>
+            <img src={props.image01} alt="Loading..." className={classes.image} onClick={handleOpen01}/>
+            <img src={props.image02} alt="Loading..." className={classes.image} onClick={handleOpen02}/>
+            <Modal
+              open={open01}
+              onClose={handleClose01}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+              >
+              {body01}
+            </Modal>
+            <Modal
+              open={open02}
+              onClose={handleClose02}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+              >
+              {body02}
+            </Modal>
+          </div>
+        </Hidden>
       </Grid>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
