@@ -8,6 +8,7 @@ import MPAM from './views/MPAM';
 import IAP from './views/IAP';
 import Protools from './views/Protools';
 import Quiz from './views/Quiz';
+import WW from './views/WW';
 import Landing from './views/Landing';
 
 
@@ -25,6 +26,7 @@ const App = () => {
                 <Route path="/introtoaudio" exact component={IAP} />
                 <Route path="/protools" exact component={Protools} />
                 <Route path="/onlinequiz" exact component={Quiz} />
+                <Route path="/whatchuwatchin" exact component={WW} />
               </Container>
             </Switch>
           </main>
