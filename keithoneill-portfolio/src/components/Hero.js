@@ -5,13 +5,9 @@ import { Typography } from '@material-ui/core';
 import HeroLayout from './HeroLayout';
 import Background from '../images/gridpapersmall.jpg'
 
-// const backgroundImage =
-//   'https://images.unsplash.com/photo-1616593772450-6220bc809944?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGdyaWQlMjBwYXBlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60';
-
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${Background})`,
-    backgroundColor: '#E9C46A',
     backgroundPosition: 'center',
   },
   h5: {
