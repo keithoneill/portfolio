@@ -7,6 +7,7 @@ import MPCert from './views/MPCert';
 import MPAM from './views/MPAM';
 import IAP from './views/IAP';
 import Protools from './views/Protools';
+import Quiz from './views/Quiz';
 import Landing from './views/Landing';
 
 
@@ -23,6 +24,7 @@ const App = () => {
                 <Route path="/mpam" exact component={MPAM} />
                 <Route path="/introtoaudio" exact component={IAP} />
                 <Route path="/protools" exact component={Protools} />
+                <Route path="/onlinequiz" exact component={Quiz} />
               </Container>
             </Switch>
           </main>
