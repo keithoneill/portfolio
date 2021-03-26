@@ -10,8 +10,8 @@ import Protools from './views/Protools';
 import Quiz from './views/Quiz';
 import WW from './views/WW';
 import Orientation from './views/Orientation';
+import Prepclass from './views/Prepclass';
 import Landing from './views/Landing';
-
 
 const App = () => {
   return (
@@ -29,6 +29,7 @@ const App = () => {
                 <Route path="/onlinequiz" exact component={Quiz} />
                 <Route path="/whatchuwatchin" exact component={WW} />
                 <Route path="/orientation" exact component={Orientation} />
+                <Route path="/prepclass" exact component={Prepclass} />
               </Container>
             </Switch>
           </main>
