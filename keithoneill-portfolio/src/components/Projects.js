@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { ButtonBase, Container, Typography, Link } from '@material-ui/core'
+import { ButtonBase, Container, Typography, Link, Hidden } from '@material-ui/core'
 
 const styles = (theme) => ({
   root: {
@@ -213,11 +213,13 @@ function Projects(props) {
                   <div className={classes.imageMarked} />
                 </Typography>
               </div>
-              <div>
-                <Typography className={classes.imageSubtitle} >
-                  {image.subtitle}
-                </Typography>
-              </div>
+              <Hidden smDown>
+                <div>
+                  <Typography className={classes.imageSubtitle} >
+                    {image.subtitle}
+                  </Typography>
+                </div>
+              </Hidden>
               </Link>
             </ButtonBase>
         ))}
