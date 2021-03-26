@@ -13,7 +13,7 @@ function Orientation() {
       image02 = {Image02}
       gif = {Gif}
       job = 'Training Specialist'
-      description = 'As the Training Specialist or New Student Orientation for Atlanta Institute of Music and Media I created and designed the online orientation for onboarding new students. The orientation covers all of the schools policies with a knowledge check. I utilized my experience in Web Design and Development to styled the content and pages for better student engagement. The course also includes Title IX training which is not only essential for schools but also for company training.'
+      description = 'As the Training Specialist for New Student Orientation for Atlanta Institute of Music and Media I created and designed the online orientation for onboarding new students. The orientation covers all of the schools policies with a knowledge check. I utilized my experience in Web Design and Development to styled the content and pages for better student engagement. The course also includes Title IX training which is not only essential for schools but also for company training.'
       />
     </div>
   );
