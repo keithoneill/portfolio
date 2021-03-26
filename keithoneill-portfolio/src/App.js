@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import MPCert from './views/MPCert';
 import MPAM from './views/MPAM';
 import IAP from './views/IAP';
+import Protools from './views/Protools';
 import Landing from './views/Landing';
 
 
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/mpcert" exact component={MPCert} />
                 <Route path="/mpam" exact component={MPAM} />
                 <Route path="/introtoaudio" exact component={IAP} />
+                <Route path="/protools" exact component={Protools} />
               </Container>
             </Switch>
           </main>
