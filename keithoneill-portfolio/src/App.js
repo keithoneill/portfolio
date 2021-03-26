@@ -9,6 +9,7 @@ import IAP from './views/IAP';
 import Protools from './views/Protools';
 import Quiz from './views/Quiz';
 import WW from './views/WW';
+import Orientation from './views/Orientation';
 import Landing from './views/Landing';
 
 
@@ -27,6 +28,7 @@ const App = () => {
                 <Route path="/protools" exact component={Protools} />
                 <Route path="/onlinequiz" exact component={Quiz} />
                 <Route path="/whatchuwatchin" exact component={WW} />
+                <Route path="/orientation" exact component={Orientation} />
               </Container>
             </Switch>
           </main>
