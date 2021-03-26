@@ -5,7 +5,7 @@ import { Grid, Link, Container, Typography } from '@material-ui/core'
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    backgroundColor: '#22577A',
+    backgroundColor: '#264653',
   },
   container: {
     marginTop: theme.spacing(8),
