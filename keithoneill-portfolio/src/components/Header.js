@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Drawer, List, ListItem, ListItemIcon, ListItemText, Divider, AppBar, Toolbar, Link, ClickAwayListener, IconButton } from '@material-ui/core';
 import { Menu as MenuIcon, Person as PersonOutlineIcon, Receipt, ContactMail, ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import Profile from '../images/KeithONeill_ProfilePic.png';
+import SidebarBG from '../images/gridpaper_sidebar.jpg';
 
 const drawerWidth = 240;
 
@@ -12,12 +13,15 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   header: {
-    backgroundColor: '#22577A',
+    backgroundColor: '#264653',
     color: '#ddd',
     width: '100vw',
   },
   text: {
     color: '#ddd',
+  },
+  sidetext: {
+    color: '#264653',
   },
   picture: {
     width: '60%',
@@ -44,6 +48,13 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundImage: `url(${SidebarBG})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    // alignItems: 'center',
   },
   drawerHeader: {
     display: 'flex',
@@ -122,7 +133,7 @@ export default function Header() {
                 <ListItemIcon>
                   <PersonOutlineIcon />
                 </ListItemIcon>
-                <ListItemText primary="Keith O'Neill" />
+                <ListItemText primary={<Typography variant='h6' className={classes.sidetext}>Keith O'Neill</Typography>}/>
               </ListItem>
             </Link>
             <Divider />
@@ -131,7 +142,7 @@ export default function Header() {
                 <ListItemIcon>
                   <Receipt />
                 </ListItemIcon>
-                <ListItemText primary="Resume" />
+                <ListItemText primary={<Typography variant='h6' className={classes.sidetext}>Resume</Typography>}/>
               </ListItem>
             </Link>
             <Divider />
@@ -140,7 +151,7 @@ export default function Header() {
                 <ListItemIcon>
                   <ContactMail />
                 </ListItemIcon>
-                <ListItemText primary="Contact" />
+                <ListItemText primary={<Typography variant='h6' className={classes.sidetext}>Contact</Typography>}/>
               </ListItem>
             </Link>
             <Divider />
