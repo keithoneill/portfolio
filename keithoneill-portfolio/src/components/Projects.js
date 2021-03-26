@@ -72,7 +72,7 @@ const styles = (theme) => ({
   },
   imageSubtitle: {
     position: 'relative',
-    paddingTop: 200,
+    marginTop: 200,
     color: '#ddd',
   },
   imageMarked: {
@@ -149,10 +149,10 @@ function Projects(props) {
     {
       url:
         'https://images.unsplash.com/photo-1515603403036-f3d35f75ca52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMzQxNzMzfHxlbnwwfHx8&auto=format&fit=crop&w=800&q=60',
-      title: 'Title IX Training',
+      title: 'Music Production Prep Class',
       subtitle: 'Training Specialist',
       width: '40%',
-      detail: 'titlenine',
+      detail: 'prepclass',
     },
     {
       url:
