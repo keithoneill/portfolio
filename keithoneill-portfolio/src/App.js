@@ -14,7 +14,9 @@ import Prepclass from './views/Prepclass';
 import Physics from './views/Physics';
 import MIDI from './views/Midi';
 import Resume from './views/Resume';
+import MusicBusiness from './views/MusicBusiness';
 import Landing from './views/Landing';
+
 
 const App = () => {
   return (
@@ -35,6 +37,7 @@ const App = () => {
                 <Route path="/prepclass" exact component={Prepclass} />
                 <Route path="/physicsofsound" exact component={Physics} />
                 <Route path="/midisynth" exact component={MIDI} />
+                <Route path="/musicbusiness" exact component={MusicBusiness} />
                 <Route path="/resume" exact component={Resume} />
               </Container>
             </Switch>
