@@ -13,8 +13,9 @@ import Orientation from './views/Orientation';
 import Prepclass from './views/Prepclass';
 import Physics from './views/Physics';
 import MIDI from './views/Midi';
-import Resume from './views/Resume';
 import MusicBusiness from './views/MusicBusiness';
+import Resume from './views/Resume';
+import Biography from './views/Biography';
 import Landing from './views/Landing';
 
 
@@ -39,6 +40,7 @@ const App = () => {
                 <Route path="/midisynth" exact component={MIDI} />
                 <Route path="/musicbusiness" exact component={MusicBusiness} />
                 <Route path="/resume" exact component={Resume} />
+                <Route path="/biography" exact component={Biography} />
               </Container>
             </Switch>
           </main>

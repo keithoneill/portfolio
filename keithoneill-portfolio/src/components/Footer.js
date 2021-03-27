@@ -4,13 +4,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import ReceiptIcon from '@material-ui/icons/Receipt';
 import EmailIcon from '@material-ui/icons/Email';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import PersonIcon from '@material-ui/icons/Person';
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '80vh',
+    minHeight: '60vh',
   },
   main: {
     marginTop: theme.spacing(8),
@@ -59,6 +60,14 @@ export default function Footer() {
                   <ReceiptIcon />
                 </ListItemIcon>
                 <ListItemText primary={<Typography variant='h5' className={classes.links}>Resume</Typography>}/>
+              </ListItem>
+            </Link>
+            <Link href="/biography" style={{ textDecoration: 'none' }} >
+              <ListItem>
+                <ListItemIcon>
+                  <PersonIcon />
+                </ListItemIcon>
+                <ListItemText primary={<Typography variant='h5' className={classes.links}>Biography</Typography>}/>
               </ListItem>
             </Link>
             <Link href="https://www.linkedin.com/in/keith-o-neill-280179133/" style={{ textDecoration: 'none' }} >
